@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/mediaquery.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Projeto Login</title>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="image"></div>
+            <div id="form">
+                <h1>Login</h1>
+                <p>Seja bem vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="login-area">
+                        <span class="material-icons">person</span>
+                        <input type="email" 
+                        name="email" 
+                        id="id-email"
+
+                        placeholder="seu E-mail" 
+                        autocomplete="email"
+                        maxlength="40"
+                        autofocus
+                        required>
+                        <label for="id-login">Login</label>
+                    </div>
+                    <div class="login-area">
+                        <span class="material-icons">password</span>
+                        <input type="password" 
+                        name="password" 
+                        id="id-password" 
+
+                        placeholder="sua senha" 
+                        autocomplete="current-password"
+                        minlength="8"
+                        maxlength="20"
+                        required>
+                        <label for="id-password">Senha</label>
+                    </div>
+                    <div>
+                        <input type="submit" value="Entrar">
+                        <a href="esqueci.html" class="button">Esqueci a senha <span class="material-icons">mail</span></a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
